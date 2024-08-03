@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu da Loja de Roupas</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+    <div class="menu" id="menu">
+      <br /><br /><br />
+      <ul>
+        <li><a href="#">Feminino</a></li>
+        <li><a href="#">Masculino</a></li>
+        <li><a href="#">Infantil</a></li>
+        <li><a href="#">Acessórios</a></li>
+      </ul>
+    </div>
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.classList.toggle("open");
+      }
+    </script>
+    <body>
+        <div class="container">
+            <h1 class="neon">Bella Boutique</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#" id="cart">Carrinho (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="produto">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.DzucdUEPQUG5whhq6B0OdwHaHa&pid=Api&P=0&h=180" alt="Produto 1">
+                <h3>Vestido Espanha</h3>
+                <p>390,00</p>
+                <button onclick="addToCart()">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.Sfo5sVxvulQGvC9F_iUshQHaHa&pid=Api&P=0&h=180" alt="Produto 2">
+                <h3>Vestido Grécia</h3>
+                <p>420,00</p>
+                <button onclick="addToCart()">Comprar</button>
+            </div>
+            <div class="produto">
+              <img src="https://fiozato.com/cdn/shop/files/TopTricoFiozato03_1200x.png?v=1705464159" alt="Produto 3">
+              <h3>Top Tricô</h3>
+              <p>199,00</p>
+              <button onclick="addToCart()">Comprar</button>
+          </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Loja de Roupas. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
